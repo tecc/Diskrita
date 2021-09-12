@@ -11,8 +11,9 @@ _is_dsdk_doc_run = hasattr(_sys, "is_dsdk_doc_run") and _sys.is_dsdk_doc_run
 
 if not _is_dsdk_doc_run:
     try:
+        # *(tecc) This is the only modification made to the binding.
+        # *...... It now doesn't depend on it existing in some defined directory.
         fp = os.path.realpath(os.path.dirname(os.path.realpath(__file__)) + "/lib")
-
         if sys.platform == "darwin":
             dll = ctypes.CDLL(os.path.abspath("{}/discord_game_sdk.dylib".format(fp)))
         elif sys.platform == "linux":
