@@ -29,7 +29,6 @@ That is a direct link to GitHub's packaged archive.
 
 ##### Installing using a zip file
 
-
 ###### Step 2.1. Build Diskrita
 
 Building Diskrita is easy - simply run [bundle.py](./bundle.py) with Python 3 or above. It will make an installable. Run this in the source directory:
@@ -40,7 +39,11 @@ python3 bundle.py
 
 ###### Step 2.2. Install it to Krita
 
-> Not done yet
+> To-do
+
+##### Installing the files manually
+
+> To-do
 
 #### Step 3. Restart Krita
 
